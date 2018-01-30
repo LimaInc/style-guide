@@ -1,0 +1,220 @@
+<h1>Java Coding Standard for Group Project</h1>
+<h3>Entity Naming</h3>
+<ul>
+<li><a href="#nncase">
+Names shall begin with an upper case letter and words shall begin with an upper case letter.</a>
+<li><a href="#nvcase">
+Variables shall begin with a lower case letter.</a>
+<li><a href="#ngvcase">
+Global variables shall begin with an upper case letter.</a>
+<li><a href="#nconstcase">
+Constants shall begin with an upper case letter,  shall be upper case and words shall be separated by underscore (_).</a>
+</ul>
+<h3>Names</h3>
+<ul>
+<li><a href="#NameSensible">
+Use sensible, descriptive names.</a>
+<li><a href="#NameEnglish">
+Only use english names.</a>
+<li><a href="#NameLength">
+Variables with a large scope shall have long names, variables with a small scope can have short names.</a>
+</ul>
+<h3>Indentation and Spacing</h3>
+<ul>
+<li><a href="#BracesExdented">
+Braces shall follow "Exdented Style".</a>
+<li><a href="#IndentLevel">
+Braces shall be indented 4 columns to the right of the starting position of the enclosing statement or declaration.</a>
+<li><a href="#BracesLoop">
+Loop and conditional statements shall always have brace enclosed
+sub-statements.</a>
+<li><a href="#BracesEmpty">
+Braces without any contents may be placed on the same line.</a>
+<li><a href="#StmtPerLine">
+Each statement shall be placed on a line on its own.</a>
+<li><a href="#ObjectPerDecl">
+Declare each variable in a separate declaration.</a>
+<li><a href="#LineLength">
+Lines shall not exceed 100 characters.</a>
+<li><a href="#TabsAvoid">
+Do not use tabs.</a>
+</ul>
+<h3>Comments</h3>
+<ul>
+<li><a href="#CommentEnglish">
+Comments shall be written in english</a>
+<li><a href="#CommentPlacement">
+All comments shall be placed above the line the comment
+describes, indented identically.</a>
+</ul>
+<h3>Declarations</h3>
+<ul>
+<li><a href="#PrivateData">
+Declare class data private.</a>
+</ul>
+<h3>Statements</h3>
+<ul>
+<li><a href="#DoWhileAvoid">
+Do not use <tt>do-while</tt> loops.</a>
+</ul>
+<h3>Other Typographical Issues</h3>
+<ul>
+<li><a href="#MagicNumberAvoid">
+Do not use literal numbers other than 0 and 1.</a>
+</ul>
+<hr />
+<h2>Entity Naming</h2>
+<a name="nncase" />
+<h3>Names shall begin with an upper case letter and words shall begin with an upper case letter.</h3>
+<a name="nvcase" />
+<h3>Variables shall begin with a lower case letter.</h3>
+<a name="ngvcase" />
+<h3>Global variables shall begin with an upper case letter.</h3>
+<a name="nconstcase" />
+<h3>Constants shall begin with an upper case letter,  shall be upper case and words shall be separated by underscore (_).</h3>
+<h2>Names</h2>
+<a name="NameSensible" />
+<h3>Use sensible, descriptive names.</h3>
+
+Do not use short cryptic names or names based on internal jokes.
+It shall be easy to type a name without looking up how it is spelt.
+<p>
+Exception: Loop variables and variables with a small scope (less 
+than 20 lines) may have short names to save space if the purpose of 
+that variable is obvious.
+
+<a name="NameEnglish" />
+<h3>Only use english names.</h3>
+
+It is confusing when mixing languages for names.
+English is the preferred language because of its spread in the
+software market and because most libraries used already use english.
+
+<a name="NameLength" />
+<h3>Variables with a large scope shall have long names, variables with a small scope can have short names.</h3>
+
+Scratch variables used for temporary storage or indices are best kept
+short. 
+A programmer reading such variables shall be able to assume that its
+value is not used outside a few lines of code.
+Common scratch variables for integers are <tt>i</tt>, <tt>j</tt>,
+<tt>k</tt>, <tt>m</tt>, <tt>n</tt> and for characters <tt>c</tt> and
+<tt>d</tt>.
+
+<h2>Indentation and Spacing</h2>
+<a name="BracesExdented" />
+<h3>Braces shall follow "Exdented Style".</h3>
+
+The Exdented Bracing Style means that the curly brace pair are lined
+up with the surrounding statement. Statements and declarations
+between the braces are indented relative to the braces.
+
+<a name="IndentLevel" />
+<h3>Braces shall be indented 4 columns to the right of the starting position of the enclosing statement or declaration.</h3>
+
+Example:
+
+
+
+No examples for Java yet
+
+
+<a name="BracesLoop" />
+<h3>Loop and conditional statements shall always have brace enclosed
+sub-statements.</h3>
+
+The code looks more consistent if all conditional and loop statements
+have braces.
+<p>
+Even if there is only a single statement after the condition or loop
+statement today, there might be a need for more code in the future.
+
+<a name="BracesEmpty" />
+<h3>Braces without any contents may be placed on the same line.</h3>
+
+The only time when two braces can occur on the same line is when they do not
+contain any code.
+<table cellspacing=10 cellpadding=5><tr><td width=20></td><td bgcolor="eeeeee"><pre>
+while (...)
+{}
+</pre></td></tr></table>
+
+<a name="StmtPerLine" />
+<h3>Each statement shall be placed on a line on its own.</h3>
+
+There is no need to make code compact.
+Putting several statements on the same line only makes the code
+cryptic to read.
+
+<a name="ObjectPerDecl" />
+<h3>Declare each variable in a separate declaration.</h3>
+
+This makes it easier to see all variables.
+
+
+<a name="LineLength" />
+<h3>Lines shall not exceed 100 characters.</h3>
+
+Even if your editor handles long lines, other people may have set up
+their editors differently. 
+Long lines in the code may also cause problems for other programs and
+printers.
+
+<a name="TabsAvoid" />
+<h3>Do not use tabs.</h3>
+
+Tabs make the source code difficult to read where different programs
+treat the tabs differently. 
+The same code can look very differently in different views.
+<p>
+Avoid using tabs in your source code to avoid this problem.
+Use spaces instead.
+
+<h2>Comments</h2>
+<a name="CommentEnglish" />
+<h3>Comments shall be written in english</h3>
+
+
+<a name="CommentPlacement" />
+<h3>All comments shall be placed above the line the comment
+describes, indented identically.</h3>
+
+Being consistent on placement of comments removes any question on what
+the comment refers to.
+
+<h2>Declarations</h2>
+<a name="PrivateData" />
+<h3>Declare class data private.</h3>
+
+Classes shall encapsulate their data and only provide access to this
+data by member functions to ensure that data in class objects are
+consistent.
+
+
+<h2>Statements</h2>
+<a name="DoWhileAvoid" />
+<h3>Do not use <tt>do-while</tt> loops.</h3>
+
+<tt>do-while</tt> loops are less readable than ordinary while loops and for
+loops since the conditional is at the bottom of the loop. 
+The reader must scan the entire loop in order to understand the scope
+of the loop.
+<p>
+In addition, do-while loops are not needed. 
+Any do-while loop can easily be rewritten into a while loop or a for
+loop.
+Reducing the number of constructs used enhance readability.
+
+<h2>Other Typographical Issues</h2>
+<a name="MagicNumberAvoid" />
+<h3>Do not use literal numbers other than 0 and 1.</h3>
+
+Use constants instead of literal numbers to make the code consistent
+and easy to maintain.
+The name of the constant is also used to document the purpose of the number.
+
+<hr />
+<i>Generated 2018-01-30 by <a href="http://www.rosvall.ie/CSG">Coding Standard Generator</a> version 1.13.</i>
+
+</body>
+</html>
